@@ -4,10 +4,10 @@
 
 <div class="card">
   <div class="card-header">
-    <strong>
+    <h3>
     {{ customer_item.first_name }}
 		{{ customer_item.last_name }}
-    </strong>
+    </h3>
   </div>
   <div class="card-body">
 
@@ -45,5 +45,11 @@
 
   </div>
 </div>
+
+<br /><br />
+<a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+<a href="{% url 'delete_customer' customer_item.id %}" class="btn btn-danger">Delete</a>
+<a href="{% url 'update_customer' customer_item.id %}" class="btn btn-success">Update</a>
+
 
 {% endblock %}
