@@ -8,7 +8,7 @@ database = mysql.connector.connect(
     auth_plugin = 'mysql_native_password'
 	)
 
-# prepare a cursor object
+# Prepare a cursor object
 cursor_object = database.cursor()
 
 # Create a database

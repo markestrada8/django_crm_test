@@ -2,19 +2,19 @@
 {% block content %}
 
 <div class="col-md-6 offset-md-3">
-<h1>Add Customer</h1>
-<br/>
-
-<form method="POST">
-	{% csrf_token %}
-
-	{{ form.as_p }}
-
+  <h1>Add Customer</h1>
   <br/>
-  <button type="submit" class="btn btn-success">Update</button>
-  <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
 
-</form>
+  <form method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <br/>
+    <button type="submit" class="btn btn-success">Update</button>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+
+  </form>
 
 </div>
 
